@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Internet Speed Test</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Internet Speed Test</h1>
+    <button id="start-btn">Start Test</button>
+
+    <div id="results" class="hidden">
+      <p><strong>Ping:</strong> <span id="ping"></span> ms</p>
+      <p><strong>Download:</strong> <span id="download"></span> Mbps</p>
+      <p><strong>Upload:</strong> <span id="upload"></span> Mbps</p>
+      <p><strong>Rank:</strong> <span id="rank"></span></p>
+    </div>
+  </div>
+
+  <script src="speedtest.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
