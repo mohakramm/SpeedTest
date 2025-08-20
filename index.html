@@ -1,47 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-<title>SpeedTest EA</title>
-<link rel="shortcut icon" href="favicon.ico">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="speedtest.js"></script>
-<script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedTest EA</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <style>
+        /* Add your CSS styles here */
+    </style>
 </head>
 <body>
-
-<div class="container">
     <h1>SpeedTest EA</h1>
-
-    <!-- Start/Abort button -->
-    <div id="startStopBtn" onclick="startStop()"></div>
-
-    <!-- Test area -->
+    <button id="startStopBtn">Start</button>
     <div id="test">
-
-        <!-- Download & Upload -->
         <div class="testGroup">
             <div class="testArea">
                 <div class="testName">Download</div>
                 <div id="dlText" class="meterText">0.00</div>
-                <div class="progress-container">
-                    <div id="dlBar" class="progress-bar"></div>
-                </div>
-                <div class="unit">Mbit/s</div>
+                <div class="unit">Mbps</div>
             </div>
             <div class="testArea">
                 <div class="testName">Upload</div>
                 <div id="ulText" class="meterText">0.00</div>
-                <div class="progress-container">
-                    <div id="ulBar" class="progress-bar"></div>
-                </div>
-                <div class="unit">Mbit/s</div>
+                <div class="unit">Mbps</div>
             </div>
         </div>
-
-        <!-- Ping & Jitter -->
         <div class="testGroup">
             <div class="testArea">
                 <div class="testName">Ping</div>
@@ -54,14 +39,9 @@
                 <div class="unit">ms</div>
             </div>
         </div>
-
-        <!-- Speed Ranking -->
         <div id="speedMessage" class="testConclusion"></div>
-
-        <!-- User IP -->
         <div id="ipArea">IP Address: <span id="ip"></span></div>
     </div>
-</div>
-
+    <a href="https://github.com/librespeed/speedtest" target="_blank">Source code</a>
 </body>
 </html>
